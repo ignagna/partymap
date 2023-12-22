@@ -1,0 +1,37 @@
+<view class="user-info">
+    <view class="head">
+        <view class="title" style="top: {{titleTop}}px;height: {{menuHeight}}px; line-height: {{menuHeight}}px;text-align: {{textAlign}};{{textAlign=='left'?'font-weight: 400;':''}}">个人中心</view>
+        <view class="rec"></view>
+        <view class="circle"></view>
+    </view>
+    <view class="ctx" style="top: {{titleTop+menuHeight}}px;">
+        <view class="card">
+            <image class="avatar" src="../../assets/images/icon/user-selected.png" wx:if="{{userInfo.nickname!==null}}"></image>
+            <image class="avatar" src="../../assets/images/user-info/info-icon/i-name.png" wx:else></image>
+            <view class="info">
+                <view class="nickname" wx:if="{{userInfo.nickname!==null}}">{{userInfo.nickname}}</view>
+                <view class="nickname" wx:else>未登录</view>
+                <button bindtap="handlePannelItemClick" class="login-btn" data-action="profile" wx:if="{{userInfo.nickname===null}}">点击授权</button>
+            </view>
+            <view class="medal-list" wx:if="{{userInfo.userMedal.length}}">
+                <image class="medal" src="https://file.hiyun.site/pxg-file/houjie/xcx/medal-{{item}}.png" wx:for="{{userInfo.userMedal}}"></image>
+            </view>
+        </view>
+        <view class="pannel">
+            <view bindtap="handlePannelItemClick" class="item" data-action="profile">
+                <image class="icon" mode="aspectFit" src="../../assets/images/user-info/i-wdzl.png"></image>
+                <view class="text">我的资料</view>
+            </view>
+            <view bindtap="handlePannelItemClick" class="item" data-action="rank" wx:if="{{userInfo.orgStatus=='P'&&userInfo.userType=='D'}}">
+                <image class="icon" mode="aspectFit" src="../../assets/images/user-info/i-rank.png"></image>
+                <view class="text">排行榜</view>
+            </view>
+            
+            <view bindtap="handlePannelItemClick" class="item" data-action="bus">
+                <image class="icon" mode="aspectFit" src="../../assets/images/user-info/i-bus.png"></image>
+                <view class="text">帮助</view>
+            </view>
+        </view>
+    </view>
+    <identity-selector bind:selected="handleIdentitySelected" from="user" wx:if="{{showIdentitySelector}}"></identity-selector>
+</view>

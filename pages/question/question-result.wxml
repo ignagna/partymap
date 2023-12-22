@@ -1,0 +1,33 @@
+<view class="question-result">
+    <view class="card">
+        <image class="title" src="../../assets/images/question-success-title.png"></image>
+        <view class="sorce">本次打卡累计获得{{5+score}}积分</view>
+        <view class="result">
+            <view class="item">
+                <view class="val">{{correctNum}}</view>
+                <view class="text">答对题目</view>
+            </view>
+            <view class="item">
+                <view class="val">{{score}}</view>
+                <view class="text">所得积分</view>
+            </view>
+            <view class="item">
+                <view class="val">{{correctRate}}%</view>
+                <view class="text">正确率</view>
+            </view>
+        </view>
+        <view class="paper">
+            <view class="title">答题卡</view>
+            <view class="paper-list">
+                <view bindtap="handleQuestionClick" class="item {{answerList[item].error?'error':''}}" data-index="{{item}}" wx:for="{{[0,1,2,3,4]}}" wx:key="*this">{{item+1}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="tips">
+        <text style="font-weight: 700;">*温馨提示：</text>答对1题积1分，上限5分。</view>
+    <view class="btn-area" wx:if="{{'result'!=mode}}">
+        <my-button plain bindtap="handleRetry" text="重新挑战" width="268rpx"></my-button>
+        <my-button bindtap="handleStop" text="结束挑战" width="268rpx"></my-button>
+    </view>
+    <post-share zhendi areaCode="{{areaCode}}" bind:close="closePostShare" bind:loaded="postImgLoaded" lineId="{{lineId}}" noCancel="{{postShareEntrance}}" uuid="{{postInfo.uuid}}" wx:if="{{postShare}}"></post-share>
+</view>

@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "game-rule-text": "./game-rule-text"
+    }
+}

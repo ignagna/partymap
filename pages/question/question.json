@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "my-button": "../../components/my-button/my-button"
+    },
+    "navigationBarTitleText": "挑战任务"
+}

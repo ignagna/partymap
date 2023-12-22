@@ -1,0 +1,105 @@
+<import src="../../wxParse/wxParse"></import>
+<view class="zhendi-detail line{{currentLineId}}">
+    <image class="main-pic" src="{{info.mainPic}}"></image>
+    <view class="main-card">
+        <view class="title">
+            <view>{{areaName.first}}</view>
+            <view wx:if="{{areaName.last}}">{{areaName.last}}</view>
+        </view>
+        <view class="daka-status {{info.dakaStatus==1?'yes':'no'}}">{{info.dakaStatus==1?'已打卡':'未打卡'}}</view>
+        <view class="item">
+            <view class="sub-title">
+                <image class="icon" mode="widthFix" src="../../assets/images/zhendi-detail/icon/i-desc.png"></image>
+        阵地简介
+      </view>
+            <view class="info-text item-text">{{info.info}}</view>
+        </view>
+        <view class="item" wx:if="{{false&&info.concatPerson}}">
+            <view class="sub-title">
+                <image class="icon" mode="widthFix" src="../../assets/images/zhendi-detail/icon/i-concat.png"></image>
+        联系人及电话
+      </view>
+            <view class="info-text item-text">{{info.concatPerson}}</view>
+        </view>
+        <view class="item">
+            <view class="sub-title">
+                <image class="icon" mode="widthFix" src="../../assets/images/zhendi-detail/icon/i-pic.png"></image>
+        阵地图片
+      </view>
+            <swiper autoplay circular indicatorDots class="item-ctx" interval="{{3000}}">
+                <swiper-item wx:for="{{info.bannerList}}" wx:key="*this">
+                    <image class="swiper-item-pic" src="{{item}}"></image>
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="item">
+            <view class="sub-title">
+                <image class="icon" mode="widthFix" src="../../assets/images/zhendi-detail/icon/i-guide.png"></image>
+        研学路线推荐
+      </view>
+            <view class="item-text">
+                <template is="wxParse" data="{{wxParseData:tourHtml.nodes}}"></template>
+            </view>
+        </view>
+        <view class="item" wx:if="{{activies&&activies[0].name}}">
+            <view class="sub-title">
+                <image class="icon" mode="widthFix" src="../../assets/images/zhendi-detail/icon/i-act.png"></image>
+        特色学习活动套餐
+      </view>
+            <view class="item-text">
+                <view class="act-item" wx:for="{{activies}}" wx:key="name">
+                    <view class="act-title">{{item.name}}</view>
+                    <view class="act-info">{{item.info}}</view>
+                    <view class="act-reservation">{{item.reservationWay}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="item" wx:if="{{info.openTime}}">
+            <view class="sub-title">
+                <image class="icon" mode="widthFix" src="../../assets/images/zhendi-detail/icon/i-open.png"></image>
+        参观须知
+      </view>
+            <view class="item-text">
+              {{info.openTime}}
+                <template is="wxParse" data="{{wxParseData:openTimeHtml.nodes}}"></template>
+            </view>
+        </view>
+        <view class="item" wx:if="{{info.name}}">
+            <view class="sub-title">
+                <image class="icon" mode="widthFix" src="../../assets/images/zhendi-detail/icon/i-location.png"></image>
+        定位信息
+      </view>
+            <view class="item-map">
+                <map bindcallouttap="handleMapClick" bindtap="handleMapClick" class="item-map" id="myMap" latitude="{{callout.latitude}}" longitude="{{callout.longitude}}" markers="{{[callout]}}" scale="14" wx:if="1"></map>
+            </view>
+            <view bindtap="handleAddTextClick" class="item-text addr">{{info.addrText}}</view>
+        </view>
+        <view class="item" wx:if="{{false}}">
+            <view class="sub-title">
+                <image class="icon" mode="widthFix" src="../../assets/images/zhendi-detail/icon/i-guide.png"></image>
+        打卡活动展板放置点
+      </view>
+            <view class="item-text">{{info.boardPosition}}</view>
+        </view>
+        <view class="item">
+            <view class="sub-title">
+                <image class="icon" mode="widthFix" src="../../assets/images/zhendi-detail/icon/i-bus.png"></image>
+        路线及站点
+      </view>
+            <view class="item-text">
+                <template is="wxParse" data="{{wxParseData:busStationrHtml.nodes}}"></template>
+                <view class="tail">{{info.tour}}</view>
+            </view>
+        </view>
+        <view class="btn-group" style="{{info.dakaStatus==1?'display: flex;':''}} ">
+            <my-button bindtap="handleDakaBtnClick" class="daka-btn" width="310rpx" wx:if="{{info.dakaStatus==0}}"></my-button>
+            <my-button bindtap="handleShareClick" class="daka-btn" text="分享海报" width="310rpx" wx:if="{{info.dakaStatus==1}}"></my-button>
+            <my-button blue bindtap="handleToQuestion" class="daka-btn" text="前往答题" width="310rpx" wx:if="{{info.dakaStatus==1}}"></my-button>
+        </view>
+    </view>
+    <my-alert bind:close="closeAlert" text="{{alertText}}" wx:if="{{showAlert&&alertText}}"></my-alert>
+    <identity-selector bind:selected="handleIdentitySelected" from="detail" wx:if="{{showIdentitySelector}}"></identity-selector>
+    <view catchtap="nothing" catchtouchmove="nothing" class="mask" wx:if="{{showMask&&!showSignSuccess}}"></view>
+    <daka-success areaCode="{{areaCode}}" areaid="{{info.id}}" bind:close="closeSignSuccess" lineid="{{info.lineId}}" wx:if="{{info.id!=-1&&showSignSuccess}}"></daka-success>
+    <post-share zhendi areaCode="{{areaCode}}" bind:close="closePostShare" bind:loaded="postImgLoaded" lineId="{{currentLineId}}" showShareTip="{{showShareTip}}" uuid="{{postInfo.uuid}}" wx:if="{{postShare}}"></post-share>
+</view>

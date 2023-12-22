@@ -1,0 +1,67 @@
+.game-rule .mask {
+    background-color: rgba(0,0,0,.5);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1100;
+}
+
+.game-rule .rule-ctx {
+    height: 892rpx;
+    left: 50%;
+    position: fixed;
+    top: 126rpx;
+    transform: translateX(-50%);
+    width: 603rpx;
+    z-index: 1200;
+}
+
+.game-rule .card {
+    box-sizing: border-box;
+    height: 892rpx;
+    position: relative;
+    width: 603rpx;
+}
+
+.game-rule .card .title {
+    font-size: 80rpx;
+    font-weight: 800;
+    margin-bottom: 90rpx;
+    text-align: center;
+}
+
+.game-rule .card .rule {
+    font-size: 24rpx;
+    line-height: 36rpx;
+}
+
+.game-rule .card .rule-img {
+    height: 892rpx;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 603rpx;
+    z-index: -1;
+}
+
+.game-rule .card .text-ctx {
+    height: 724rpx;
+    left: 50%;
+    overflow-y: scroll;
+    position: absolute;
+    text-align: center;
+    top: 118rpx;
+    transform: translateX(-50%);
+    width: 575rpx;
+}
+
+.game-rule .card .close {
+    bottom: -50rpx;
+    height: 68rpx;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,100%);
+    width: 68rpx;
+}

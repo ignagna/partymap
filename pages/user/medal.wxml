@@ -1,0 +1,12 @@
+<view class="medal">
+    <view class="header">
+        <image class="bg" src="https://file.hiyun.site/pxg-file/houjie/xcx/medal-header.png"></image>
+        <view class="text">累计获得{{lightCount}}枚勋章</view>
+    </view>
+    <view class="ctx">
+        <view bindtap="handleMedalClick" class="item" data-item="{{item}}" wx:for="{{medalList}}" wx:key="name">
+            <image class="medal-icon" src="https://file.hiyun.site/pxg-file/houjie/xcx/medal-{{item.name}}{{item.light?'':'-gary'}}.png"></image>
+            <view class="text">{{item.text}}</view>
+        </view>
+    </view>
+</view>

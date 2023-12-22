@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "post-share": "../../components/post-share/post-share",
+        "my-button": "../../components/my-button/my-button"
+    },
+    "navigationBarTitleText": "路线详情"
+}

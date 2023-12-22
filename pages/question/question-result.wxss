@@ -1,0 +1,151 @@
+page {
+    background: #fff8d6;
+}
+
+.card {
+    background-color: #fff;
+    border: 14rpx solid #ffd1a8;
+    border-radius: 53rpx;
+    box-sizing: border-box;
+    height: 1040rpx;
+    margin: 80rpx auto 0;
+    padding-top: 40rpx;
+    position: relative;
+    text-align: center;
+    width: 686rpx;
+}
+
+.card .star {
+    height: 243rpx;
+    left: 50%;
+    position: absolute;
+    top: -10rpx;
+    transform: translateX(-50%) scale(.85);
+    width: 685rpx;
+}
+
+.card .star .star-img-gary {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.card .star .star-img-light-wrapper {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 552rpx;
+    z-index: 99;
+}
+
+.card .star .star-img-light {
+    height: 243rpx;
+    width: 685rpx;
+}
+
+.card .title {
+    font-size: 53rpx;
+    font-weight: 700;
+    height: 77rpx;
+    text-align: center;
+}
+
+.card image.title {
+    height: 148rpx;
+    text-align: center;
+    width: 639rpx;
+}
+
+.card .sorce {
+    color: #ff914d;
+    font-size: 36rpx;
+    font-weight: 700;
+    margin-top: 0;
+    text-align: center;
+}
+
+.card .result {
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 19rpx;
+    display: flex;
+    height: 169rpx;
+    justify-content: space-around;
+    margin: 57rpx auto 37rpx;
+    text-align: center;
+    width: 602rpx;
+}
+
+.card .result .item {
+    display: flex;
+    flex-direction: column;
+    font-size: 30rpx;
+    width: 120rpx;
+}
+
+.card .result .item .val {
+    font-size: 52rpx;
+    font-weight: 700;
+    line-height: 52rpx;
+}
+
+.card .result .item .text {
+    color: #7a7a7a;
+    line-height: 40rpx;
+    margin-top: 12rpx;
+}
+
+.card .paper {
+    background: #f8f8f8;
+    border-radius: 19rpx;
+    box-sizing: border-box;
+    height: 480rpx;
+    margin: 0 auto;
+    padding: 32rpx;
+    width: 602rpx;
+}
+
+.card .paper .title {
+    margin-bottom: 47rpx;
+}
+
+.card .paper .paper-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 277rpx;
+    justify-content: center;
+}
+
+.card .paper .item {
+    background: #43cf7c;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 70rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+    margin: 0rpx 19.5rpx 37rpx;
+    text-align: center;
+    width: 120rpx;
+}
+
+.card .paper .item.error {
+    background: #ff6961;
+}
+
+.tips {
+    font-size: 28rpx;
+    margin: 23rpx auto 0;
+    width: 686rpx;
+}
+
+.btn-area {
+    display: flex;
+    justify-content: space-around;
+    margin: 0rpx auto 0;
+    width: 621rpx;
+}

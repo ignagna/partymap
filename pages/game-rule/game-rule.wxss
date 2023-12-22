@@ -1,0 +1,13 @@
+page {
+    background-color: #fffae3;
+}
+
+.game-rule {
+    margin: 0 auto;
+    width: 750rpx;
+}
+
+.main-title {
+    height: 153rpx;
+    width: 750rpx;
+}

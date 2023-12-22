@@ -1,0 +1,21 @@
+<view class="question {{mode}}">
+    <view class="card">
+        <view class="index">
+            <view class="left">{{nowIndex+1}}<text class="right">/5</text>
+            </view>
+        </view>
+        <view class="title">{{questionList[nowIndex].question}}</view>
+        <view class="option-list">
+            <view bindtap="handleOptionClick" class="option-item {{answerList[nowIndex].error==item?'error':''}} {{answerList[nowIndex].correct==item?'correct':''}} {{answerList[nowIndex].selected==item?'selected':''}}" data-option="{{item}}" wx:if="{{questionList[nowIndex]['option'+item]}}" wx:for="{{['A','B','C','D']}}" wx:key="*this">
+                <view class="left">{{item}}</view>
+                <view>|</view>
+                <view class="right">{{questionList[nowIndex]['option'+item]}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="btn-area" wx:if="{{'result'!=mode}}">
+        <my-button bindtap="handlePrev" class="prev-btn" text="上一题" width="268rpx" wx:if="{{nowIndex>=1}}"></my-button>
+        <my-button bindtap="handleNext" class="next-btn" disabled="{{!answerList[nowIndex]}}" text="下一题" width="268rpx" wx:if="{{nowIndex<4}}"></my-button>
+        <my-button bindtap="handleStop" class="next-btn" disabled="{{!answerList[nowIndex]}}" text="结束挑战" width="268rpx" wx:if="{{nowIndex==4}}"></my-button>
+    </view>
+</view>

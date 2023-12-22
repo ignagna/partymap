@@ -1,0 +1,17 @@
+<view class="org">
+    <view class="step1" wx:if="{{step==1}}">
+        <view bindtap="toStep2" class="item">本人党组织关系属于淄博监管分局镇</view>
+        <view bindtap="handleItemClick" class="item" data-item="{{noHoujie}}">本人党组织关系不属于淄博监管分局镇</view>
+    </view>
+    <view class="step2" wx:if="{{step==2}}">
+        <view class="search">
+            <input bindinput="handleKeywordInput" class="search-input" placeholder="搜索所属党组织" type="text" value="{{keyWord}}"></input>
+            <image class="search-icon" src="../../assets/images/search-icon.png"></image>
+        </view>
+        <view class="org-list">
+            <view bindtap="handleItemClick" class="org-item" data-item="{{item}}" wx:if="{{item.id!=999}}" wx:for="{{showList}}" wx:key="id">
+        {{item.title}}
+      </view>
+        </view>
+    </view>
+</view>

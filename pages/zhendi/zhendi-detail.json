@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "my-button": "../../components/my-button/my-button",
+        "my-alert": "../../components/my-alert/my-alert",
+        "daka-success": "../../components/daka-success/daka-success",
+        "identity-selector": "../../components/identity-selector/identity-selector",
+        "post-share": "../../components/post-share/post-share"
+    },
+    "navigationBarTitleText": "阵地详情"
+}

@@ -1,0 +1,41 @@
+<view catchtouchmove="nothing" class="post-page">
+    <view class="ctx">
+        <view class="post-card">
+            <image class="post-img" src="{{postUrl}}"></image>
+        </view>
+        <view class="opt">
+            <view class="top">
+                <view bindtap="shareFirend" class="item">
+                    <view class="icon">
+                        <image class="icon-img" src="../../assets/images/post-share/haoyou.png"></image>
+                    </view>
+                    <view class="text">微信好友</view>
+                </view>
+                <view bindtap="showSharePyqTip" class="item">
+                    <view class="icon">
+                        <image class="icon-img" src="../../assets/images/post-share/pyq.png"></image>
+                    </view>
+                    <view class="text">朋友圈</view>
+                </view>
+                <view bindtap="downloadImg" class="item">
+                    <view class="icon">
+                        <image class="icon-img" src="../../assets/images/post-share/save.png"></image>
+                    </view>
+                    <view class="text">保存图片</view>
+                </view>
+            </view>
+            <view bindtap="handleClose" class="bottom">
+        取消
+      </view>
+        </view>
+    </view>
+    <view class="mask"></view>
+    <view bindtap="closeShareTip" class="mask-tip" wx:if="{{showShareTip}}">
+        <view class="ctx share-tip">
+            <image class="moment-line" src="../../assets/images/share-moment-line.png"></image>
+            <image class="moment-tip" src="../../assets/images/share-moment-zhendi-text.png" wx:if="{{zhendi}}"></image>
+            <image class="moment-tip" src="../../assets/images/share-moment-text.png" wx:if="{{!zhendi}}"></image>
+            <image class="moment-btn" src="../../assets/images/share-moment-btn.png"></image>
+        </view>
+    </view>
+</view>

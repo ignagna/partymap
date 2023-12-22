@@ -1,0 +1,28 @@
+<view class="identity-selector-wrap from{{from}}">
+    <view catchtouchmove="nothing" class="identity-selector" wx:if="{{showIdentitySelector}}">
+        <view class="wrapper">
+            <view bindtap="handleSelect" class="identity-selector-item" data-type="houjie">
+                <image class="selector-item-icon" src="../../assets/images/zhendi-detail/dy-icon.png"></image>
+                <view class="selector-item-text">我是党员</view>
+            </view>
+            <view bindtap="handleSelect" class="identity-selector-item" data-type="guest">
+                <image class="selector-item-icon" src="../../assets/images/zhendi-detail/guest-icon.png"></image>
+                <view class="selector-item-text">我是游客</view>
+            </view>
+        </view>
+    </view>
+    <view catchtouchmove="nothing" class="identity-selector" wx:if="{{showDangyuantypeSelector}}">
+        <view class="wrapper">
+            <view bindtap="handleSelect" class="identity-selector-item" data-type="houjie">
+                <image class="selector-item-icon" src="../../assets/images/zhendi-detail/hjdy-icon.png"></image>
+                <view class="selector-item-text">我是淄博监管分局党员</view>
+            </view>
+            <view bindtap="handleSelect" class="identity-selector-item" data-type="other">
+                <image class="selector-item-icon" src="../../assets/images/zhendi-detail/other-icon.png"></image>
+                <view class="selector-item-text">我是非淄博监管分局党员</view>
+            </view>
+        </view>
+    </view>
+    <view class="safe-area" wx:if="{{from!='user'}}"></view>
+    <view catchtap="nothing" catchtouchmove="nothing" class="mask"></view>
+</view>

@@ -1,0 +1,146 @@
+.post-page {
+    height: 100vh;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 199;
+}
+
+.post-page .mask {
+    background-color: rgba(0,0,0,.5);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.post-page .ctx {
+    left: 50%;
+    position: absolute;
+    top: 52rpx;
+    transform: translateX(-50%);
+    width: 588rpx;
+    z-index: 120;
+}
+
+.post-page .post-card {
+    height: 1002rpx;
+    width: 588rpx;
+}
+
+.post-page .post-card .post-img {
+    border-radius: 30rpx;
+    height: 100%;
+    width: 100%;
+}
+
+.post-page .opt {
+    background: #fff;
+    border-radius: 31rpx;
+    height: 291rpx;
+    margin-top: 39rpx;
+    overflow: hidden;
+    width: 588rpx;
+}
+
+.post-page .opt .top {
+    display: flex;
+    justify-content: space-between;
+    margin: 40rpx auto;
+    width: 441rpx;
+}
+
+.post-page .opt .item {
+    display: flex;
+    flex-direction: column;
+    font-size: 24rpx;
+    height: 149rpx;
+    text-align: center;
+    width: 100rpx;
+}
+
+.post-page .opt .item .icon,.post-page .opt .item .icon-img {
+    height: 100rpx;
+    width: 100rpx;
+}
+
+.post-page .opt .item .text {
+    margin-top: 14rpx;
+}
+
+.post-page .opt .bottom {
+    border-top: 2rpx solid #a6a6a6;
+    height: 65rpx;
+    line-height: 65rpx;
+    text-align: center;
+    width: 100%;
+}
+
+.mask-tip {
+    background-color: rgba(0,0,0,.7);
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 750rpx;
+    z-index: 199;
+}
+
+.mask-tip .ctx {
+    height: 140rpx;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 750rpx;
+}
+
+.mask-tip .ctx.share-tip {
+    height: 950rpx;
+    text-align: right;
+    top: 10rpx;
+    transform: translateX(-50%);
+}
+
+.mask-tip image {
+    display: block;
+}
+
+.mask-tip .text-tip {
+    height: 140rpx;
+    margin: 0 auto;
+    width: 384rpx;
+}
+
+.mask-tip .line-tip {
+    height: 524rpx;
+    margin-left: 121rpx;
+    width: 130rpx;
+}
+
+.mask-tip .moment-line {
+    display: inline-block;
+    height: 345rpx;
+    margin-bottom: 40rpx;
+    margin-right: 117rpx;
+    width: 194rpx;
+}
+
+.mask-tip .moment-tip {
+    height: 140rpx;
+    margin: 0 auto 340rpx;
+    width: 624rpx;
+}
+
+.mask-tip .moment-btn {
+    height: 69rpx;
+    margin: 0 auto;
+    width: 226rpx;
+}

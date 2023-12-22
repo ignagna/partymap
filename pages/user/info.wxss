@@ -1,0 +1,149 @@
+page {
+    background: #f6f6f6;
+}
+
+.head {
+    height: 430rpx;
+    position: fixed;
+    width: 750rpx;
+}
+
+.head .title {
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 700;
+    left: 50%;
+    position: fixed;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 700rpx;
+}
+
+.head .rec {
+    background: linear-gradient(180deg,#ff8952,#ff5733 65.23%);
+    height: 419rpx;
+    left: 0;
+    position: absolute;
+    top: -82rpx;
+    width: 750rpx;
+    z-index: -1;
+}
+
+.head .circle {
+    background: #ff5733;
+    border-radius: 50%;
+    bottom: 0;
+    height: 759rpx;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 1140rpx;
+    z-index: -10;
+}
+
+.ctx {
+    box-sizing: border-box;
+    height: 750rpx;
+    left: 0;
+    padding-top: 74rpx;
+    position: fixed;
+    width: 750rpx;
+    z-index: 10;
+}
+
+.ctx .card {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15.36rpx;
+    display: flex;
+    height: 219.23rpx;
+    margin: 0 auto;
+    width: 688.46rpx;
+}
+
+.ctx .avatar {
+    border: 5rpx solid #ff5733;
+    border-radius: 100%;
+    height: 149rpx;
+    margin-left: 32rpx;
+    width: 149rpx;
+}
+
+.ctx .info {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    height: 129rpx;
+    margin-left: 41rpx;
+    max-width: 310rpx;
+}
+
+.ctx .info .nickname {
+    font-size: 40rpx;
+    height: 54rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.ctx .info button.login-btn {
+    background-color: #ff5733;
+    border: none;
+    border-radius: 26.5rpx;
+    color: #fff;
+    display: block;
+    font-size: 28rpx;
+    height: 53rpx;
+    line-height: 53rpx;
+    margin: 13rpx 0 0;
+    outline: none;
+    padding: 0;
+    width: 173rpx;
+}
+
+.ctx .medal-list {
+    margin-right: 42rpx;
+    text-align: right;
+    width: 98rpx;
+}
+
+.ctx .medal {
+    height: 98rpx;
+    width: 98rpx;
+}
+
+.ctx .pannel {
+    background-color: #fff;
+    border-radius: 15rpx;
+    color: #282828;
+    font-size: 30rpx;
+    margin: 56rpx auto 0;
+    width: 691rpx;
+}
+
+.ctx .pannel .item {
+    align-items: center;
+    border-bottom: 2rpx solid #f6f6f6;
+    display: flex;
+    height: 106rpx;
+    line-height: 106rpx;
+    margin: 0 auto;
+    width: 637rpx;
+}
+
+.ctx .pannel .item .icon {
+    height: 46rpx;
+    margin-left: 8rpx;
+    margin-right: 14rpx;
+    width: 46rpx;
+}
+
+.ctx .pannel .item .text {
+    width: 100%;
+}
+
+.ctx .pannel .item:last-child {
+    border-bottom: none;
+}

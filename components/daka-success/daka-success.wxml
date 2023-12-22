@@ -1,0 +1,6 @@
+<view catchtap="handleClose" catchtouchmove="nothing" class="daka-success">
+    <view class="success-wrap">
+        <image catchtap="toQuestion" class="success-img" src="https://mmbiz.qpic.cn/mmbiz_png/IVre43raEsr75MeUWWHWHZc4e09MWI34ibdxbUTiagST7u4ibnFIfVvlaKSHNyrVpTFicrIEvHD5bp0pY6w9Drzmew/0?wx_fmt=png"></image>
+        <image catchtap="handleClose" class="close" src="../../assets/images/close.png"></image>
+    </view>
+</view>

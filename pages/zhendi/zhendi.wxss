@@ -1,0 +1,12 @@
+.zhendi {
+    position: fixed;
+}
+
+.zhendi .rule-btn {
+    height: 159rpx;
+    position: fixed;
+    right: 30rpx;
+    top: 60rpx;
+    width: 129rpx;
+    z-index: 999;
+}

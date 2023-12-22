@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "my-button": "../../components/my-button/my-button",
+        "post-share": "../../components/post-share/post-share"
+    },
+    "navigationBarTitleText": "挑战任务"
+}

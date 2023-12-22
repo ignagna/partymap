@@ -1,0 +1,116 @@
+.rank .header {
+    height: 343rpx;
+    width: 750rpx;
+}
+
+.rank .tabbar {
+    background-color: #fff;
+    display: flex;
+    height: 95rpx;
+    justify-content: center;
+    width: 750rpx;
+}
+
+.rank .tabbar .item {
+    border-bottom: 15rpx solid #fff;
+    box-sizing: border-box;
+    flex: 1;
+    font-size: 36rpx;
+    height: 95rpx;
+    line-height: 80rpx;
+    text-align: center;
+    transition: all .1s ease-in-out;
+}
+
+.rank .tabbar .item.active {
+    border-bottom: 10rpx solid #ff6961;
+}
+
+.rank .tips {
+    color: grey;
+    font-size: 26rpx;
+    margin: 13rpx auto;
+    width: 692rpx;
+}
+
+.rank .item-card {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    height: 140rpx;
+    width: 750rpx;
+}
+
+.rank .item-card view.rank {
+    font-size: 48rpx;
+    font-weight: 700;
+    height: 56rpx;
+    margin-left: 19rpx;
+    text-align: center;
+    width: 54rpx;
+}
+
+.rank .item-card image.rank {
+    height: 72rpx;
+    margin-left: 19rpx;
+    width: 51rpx;
+}
+
+.rank .item-card .avatar {
+    border-radius: 50%;
+    height: 84rpx;
+    margin-left: 23rpx;
+    width: 84rpx;
+}
+
+.rank .item-card .info {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    margin-left: 48rpx;
+}
+
+.rank .item-card .info .nickname {
+    font-size: 32rpx;
+    font-weight: 700;
+    height: 46rpx;
+    width: 100%;
+}
+
+.rank .item-card .info .org {
+    color: grey;
+    font-size: 24rpx;
+    height: 38rpx;
+    line-height: 30rpx;
+    margin-top: 4rpx;
+}
+
+.rank .item-card .medal,.rank .item-card .total {
+    margin-left: 30rpx;
+    text-align: center;
+    width: 96rpx;
+}
+
+.rank .item-card .medal .text,.rank .item-card .total .text {
+    font-size: 24rpx;
+    height: 35rpx;
+}
+
+.rank .item-card .medal .value,.rank .item-card .total .value {
+    font-size: 50rpx;
+    height: 59rpx;
+}
+
+.rank .item-card .medal {
+    margin-right: 11rpx;
+}
+
+.rank .item-card .medal .value {
+    color: #ffc300;
+}
+
+.rank .rank-list {
+    margin-top: 28rpx;
+    padding-bottom: 60rpx;
+}

@@ -1,0 +1,12 @@
+<view class="game-rule">
+    <view bindtap="close" catchtouchmove="nothing" class="mask"></view>
+    <view class="rule-ctx">
+        <view class="card">
+            <view class="text-ctx">
+                <game-rule-text antiphase class="rule-text-c"></game-rule-text>
+            </view>
+            <image class="rule-img" src="../../assets/images/rule-home-bg.png"></image>
+            <image bindtap="close" class="close" src="../../assets/images/close.png"></image>
+        </view>
+    </view>
+</view>

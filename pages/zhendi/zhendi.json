@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "scan-icon": "../../components/scan-icon/scan-icon",
+        "my-map": "../../components/map/map",
+        "game-rule": "../../components/game-rule/game-rule",
+        "acvtivity-info": "../../components/acvtivity-info/acvtivity-info"
+    },
+    "navigationBarTitleText": "淄博监管分局党建地图"
+}

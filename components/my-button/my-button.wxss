@@ -1,0 +1,36 @@
+.daka-btn {
+    background-color: #ff5733;
+    border: 5rpx solid #ff5733;
+    border-radius: 58rpx;
+    box-shadow: 0 2px 24px 0 rgba(255,87,51,.48);
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 40rpx;
+    height: 96rpx;
+    line-height: 86rpx;
+    margin-bottom: 50rpx;
+    margin-top: 52rpx;
+}
+
+.daka-btn.plain {
+    background-color: initial;
+    border: 5rpx solid #ff5733;
+    box-shadow: none;
+    color: #ff5733;
+}
+
+.daka-btn.blue {
+    background-color: #4b95ff;
+    border-color: #4b95ff;
+    box-shadow: 0 2px 24px 0 #4b95ff;
+}
+
+button.daka-btn[disabled] {
+    background-color: #d1d1d1;
+    border: 5rpx solid #d1d1d1;
+    box-shadow: none;
+}
+
+button::after {
+    border: none;
+}

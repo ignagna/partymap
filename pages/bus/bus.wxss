@@ -1,0 +1,13 @@
+page {
+    background-color: #86f1eb;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.bus-img {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    width: 750rpx;
+}

@@ -1,0 +1,11 @@
+.scan-icon {
+    bottom: 60rpx;
+    position: fixed;
+    right: 43rpx;
+    z-index: 999;
+}
+
+.scan-icon,.scan-icon .scan-icon-img {
+    height: 90rpx;
+    width: 90rpx;
+}

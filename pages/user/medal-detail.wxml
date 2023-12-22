@@ -1,0 +1,8 @@
+<view class="medal-detail">
+    <view class="medal-info">
+        <image class="medal" src="https://file.hiyun.site/pxg-file/houjie/xcx/medal-{{medalInfo.name}}.png"></image>
+        <view class="text">{{medalInfo.text}}</view>
+        <view class="time">解锁时间：{{medalInfo.lightTime}}</view>
+    </view>
+    <my-button plain bindtap="updateUserMedalWear" text="{{medalInfo.wear?'卸下':'装备'}}"></my-button>
+</view>

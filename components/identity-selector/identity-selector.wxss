@@ -1,0 +1,50 @@
+.mask {
+    background-color: rgba(0,0,0,.5);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 200;
+}
+
+.fromuser .identity-selector,.mask {
+    bottom: 0;
+}
+
+.identity-selector {
+    background-color: #fff;
+    border-radius: 40rpx 40rpx 0 0;
+    bottom: env(safe-area-inset-bottom);
+    font-size: 30rpx;
+    height: 362rpx;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 750rpx;
+    z-index: 210;
+}
+
+.identity-selector .wrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 467rpx;
+}
+
+.identity-selector .selector-item-icon {
+    height: 154rpx;
+    margin-bottom: 18rpx;
+    width: 154rpx;
+}
+
+.safe-area {
+    background-color: #fff;
+    bottom: 0;
+    height: env(safe-area-inset-bottom);
+    left: 0;
+    position: fixed;
+    width: 750rpx;
+    z-index: 210;
+}

@@ -1,0 +1,38 @@
+.my-alert {
+    background-color: rgba(0,0,0,.5);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 200;
+}
+
+.my-alert .alert-body {
+    background-color: #fff;
+    border-radius: 14rpx;
+    left: 50%;
+    min-height: 277/2rpx;
+    overflow: hidden;
+    position: fixed;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    width: 600rpx;
+}
+
+.my-alert .ctx {
+    color: #585858;
+    font-size: 34rpx;
+    margin: 49rpx auto;
+    text-align: center;
+    width: 400rpx;
+}
+
+.my-alert .confirm {
+    border-top: 3rpx solid #c7c7c7;
+    color: #ff5733;
+    height: 87rpx;
+    line-height: 87rpx;
+    text-align: center;
+    width: 100%;
+}

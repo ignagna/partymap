@@ -1,0 +1,7 @@
+<view catchtouchmove="preventTouchMove" class="canvasMain" hidden="{{!posterDatas.show}}">
+    <canvas class="firstCanvas" id="firstCanvas" style="width:{{posterDatas.width}}rpx;height:{{posterDatas.height}}rpx;" type="2d"></canvas>
+    <button bindtap="onDownloadImges" class="button" wx:if="{{posterDatas.buttonType==1}}">点击保存</button>
+    <button class="button" wx:if="{{posterDatas.buttonType==2}}">已保存到相册，快去分享吧</button>
+    <button bindopensetting="onBindOpenSetting" class="button" openType="openSetting" wx:if="{{posterDatas.buttonType==3}}">进入设置页，开启“保存到相册”</button>
+</view>
+<view catchtap="onBuildPosterSaveAlbum" class="canvas2d">立即生成</view>

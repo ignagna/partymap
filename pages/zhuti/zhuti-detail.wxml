@@ -1,0 +1,55 @@
+<view class="zhuti-detail {{info.code}}">
+    <view class="title">
+        <view class="logo">
+            <image class="logo-img" mode="aspectFit" src="../../assets/images/zhuti/detail/{{info.code}}.png" wx:if="{{info.code}}"></image>
+        </view>
+    {{info.title}}
+  </view>
+    <view class="map">
+        <image class="map-bg" src="{{info.mapurl}}"></image>
+        <view class="light-area">
+            <view class="name-card">
+                <image class="name-item" mode="heightFix" src="../../assets/images/zhuti/name/{{item.light?'light':'gray'}}/{{item.alias?item.alias:item.code}}.png" style="left:{{(item.x-8)/902*100}}%;top:{{item.y/1231*100}}%;{{item.h?'height:'+item.h+'rpx;':''}}" wx:for="{{nowNameCard}}" wx:key="code"></image>
+            </view>
+            <image class="item" src="../../assets/images/zhuti/light-{{item.light?'green':'gray'}}.png" style="left: {{item.x}}rpx;top: {{item.y}}rpx;" wx:for="{{nowLightLogo}}" wx:key="code"></image>
+        </view>
+        <view class="touch-area">
+            <view bindtap="handleAreaTap" class="item" data-code="{{item.code}}" style="left: {{item.x}}rpx;top: {{item.y}}rpx;width: {{item.w}}rpx;height: {{item.h}}rpx;" wx:for="{{nowTouchArea}}" wx:key="code"></view>
+        </view>
+    </view>
+    <view class="info">
+        <view class="sub-title">
+          路线特点
+        </view>
+        <view class="text">
+          {{info.desc1}}
+        </view>
+    </view>
+    <view class="info">
+        <view class="sub-title">
+          行程安排
+        </view>
+        <view class="text">
+          <text>{{info.desc2}}</text>
+        </view>
+    </view>
+    <view class="info">
+        <view class="sub-title">
+          地点简介
+        </view>
+        <view class="text">
+          <text>{{info.desc3}}</text>
+        </view>
+    </view>
+    <view class="tip" wx:if="{{info.tips}}">
+        <text class="blob">*备注：无</text>
+  </view>
+    <my-button catchtap="showPostShare" class="post-btn" text="生成勋章海报" wx:if="{{info.totalArea==lightCount&&!postShare}}"></my-button>
+    <post-share bind:close="closePostShare" bind:loaded="postImgLoaded" lineId="{{lineId}}" showShareTip="{{shareTip}}" uuid="{{postInfo.uuid}}" wx:if="{{postShare}}"></post-share>
+    <view catchtap="closeMask" catchtouchmove="nothing" class="mask-tip" wx:if="{{postTip}}">
+        <view class="ctx post-tip" wx:if="{{postTip}}">
+            <image class="text-tip" src="../../assets/images/zhuti/post-tip.png"></image>
+            <image class="line-tip" src="../../assets/images/zhuti/post-tip-line.png"></image>
+        </view>
+    </view>
+</view>

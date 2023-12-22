@@ -1,0 +1,45 @@
+<view class="rank">
+    <image class="header" src="https://file.hiyun.site/pxg-file/houjie/xcx/rank-header.png"></image>
+    <view class="tabbar">
+        <view bindtap="handleTabbarClick" class="item {{active=='all'?'active':''}}" data-name="all">全镇党员总排名</view>
+        <view bindtap="handleTabbarClick" class="item {{active=='org'?'active':''}}" data-name="org">在所属党组织排名</view>
+    </view>
+    <view class="tips"> 
+    *温馨提示：将按照分数高低进行排名，同分数的将按照得分时间先后顺序进行排序。
+  </view>
+    <view class="mine item-card">
+        <view class="rank">{{mine.rank}}</view>
+        <image class="avatar" src="{{mine.avatar}}"></image>
+        <view class="info">
+            <view class="nickname">{{mine.nickname}}</view>
+            <view class="org" wx:if="{{active=='all'}}">{{mine.orgName}}</view>
+        </view>
+        <view class="total">
+            <view class="text">累计积分</view>
+            <view class="value">{{mine.score}}</view>
+        </view>
+        <view class="medal">
+            <view class="text">勋章数量</view>
+            <view class="value">{{mine.medalCount}}</view>
+        </view>
+    </view>
+    <view class="rank-list">
+        <view class="mine item-card" wx:for="{{list}}" wx:key="uid">
+            <view class="rank" wx:if="{{index>2}}">{{item.rank}}</view>
+            <image class="rank" src="../../assets/images/user-info/rank-{{index+1}}.png" wx:if="{{index<=2}}"></image>
+            <image class="avatar" src="{{item.avatar}}"></image>
+            <view class="info">
+                <view class="nickname">{{item.nickname}}</view>
+                <view class="org" wx:if="{{active=='all'}}">{{item.orgName}}</view>
+            </view>
+            <view class="total">
+                <view class="text">累计积分</view>
+                <view class="value">{{item.score}}</view>
+            </view>
+            <view class="medal">
+                <view class="text">勋章数量</view>
+                <view class="value">{{item.medalCount}}</view>
+            </view>
+        </view>
+    </view>
+</view>

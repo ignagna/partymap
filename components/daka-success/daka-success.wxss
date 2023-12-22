@@ -1,0 +1,30 @@
+.daka-success {
+    background: rgba(0,0,0,.5);
+    height: 100vh;
+    position: fixed;
+    width: 750rpx;
+    z-index: 300;
+}
+
+.daka-success .success-wrap {
+    height: 646rpx;
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    width: 685rpx;
+}
+
+.daka-success .success-img {
+    height: 646rpx;
+    width: 685rpx;
+}
+
+.daka-success .close {
+    bottom: -41rpx;
+    height: 68rpx;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,100%);
+    width: 68rpx;
+}

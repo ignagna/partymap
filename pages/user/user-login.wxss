@@ -1,0 +1,120 @@
+.avatar-wrapper {
+    background-color: none;
+    border: none;
+    border-radius: 100%;
+    color: transparent;
+    font-size: 0;
+    margin-top: 75rpx;
+    outline: none;
+    overflow: visible;
+    padding: 0;
+    width: 188rpx!important;
+}
+
+button::after {
+    border: none;
+}
+
+.avatar {
+    border-radius: 100%;
+    display: block;
+    height: 188rpx;
+    width: 188rpx;
+}
+
+.edit {
+    background-color: #fff;
+    border: 9rpx solid #fff;
+    border-radius: 100%;
+    bottom: 0;
+    height: 55rpx;
+    position: absolute;
+    right: -19rpx;
+    width: 55rpx;
+}
+
+.guest .nickname-wrapper,.other .nickname-wrapper {
+    margin: 50rpx auto;
+    width: 609rpx;
+}
+
+.guest .nickname-wrapper .label,.other .nickname-wrapper .label {
+    margin-bottom: 19rpx;
+    padding-left: 16rpx;
+}
+
+.guest .nickname-input,.other .nickname-input {
+    background-color: #ccc;
+    border-radius: 21rpx;
+    box-sizing: border-box;
+    font-size: 28rpx;
+    height: 93rpx;
+    line-height: 93rpx;
+    padding: 30rpx 24rpx;
+    width: 100%;
+}
+
+.dangyuan,.houjie,.other {
+    background: #f6f6f6;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.dangyuan .dangyuan-info,.houjie .dangyuan-info,.other .dangyuan-info {
+    background-color: #fff;
+    border-radius: 12rpx;
+    margin: 101rpx auto 0;
+    width: 686rpx;
+}
+
+.dangyuan .dangyuan-info .item,.houjie .dangyuan-info .item,.other .dangyuan-info .item {
+    align-items: center;
+    border-bottom: 2rpx solid rgba(0,0,0,.1);
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    min-height: 112rpx;
+    width: 654rpx;
+}
+
+.dangyuan .dangyuan-info .item:last-child,.houjie .dangyuan-info .item:last-child,.other .dangyuan-info .item:last-child {
+    border: none;
+}
+
+.dangyuan .dangyuan-info .label,.houjie .dangyuan-info .label,.other .dangyuan-info .label {
+    word-wrap: none;
+    font-size: 32rpx;
+    margin-right: 22rpx;
+    width: 160rpx;
+    word-break: keep-all;
+}
+
+.dangyuan .dangyuan-info .item-input,.dangyuan .dangyuan-info .org-title,.houjie .dangyuan-info .item-input,.houjie .dangyuan-info .org-title,.other .dangyuan-info .item-input,.other .dangyuan-info .org-title {
+    margin: 0;
+    width: 400rpx;
+}
+
+.dangyuan .dangyuan-info .dot,.houjie .dangyuan-info .dot,.other .dangyuan-info .dot {
+    height: 34rpx;
+    margin-right: 21rpx;
+    width: 30rpx;
+}
+
+.daka-btn {
+    bottom: 0;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+}
+
+.tips {
+    font-size: 26rpx;
+    line-height: 45rpx;
+    margin: 33rpx auto 0;
+    width: 700rpx;
+}
+
+.tips .bold {
+    font-weight: 700;
+}

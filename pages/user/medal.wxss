@@ -1,0 +1,49 @@
+.header {
+    height: 343rpx;
+    position: relative;
+    width: 750rpx;
+}
+
+.header .bg {
+    height: 100%;
+    width: 100%;
+}
+
+.header .text {
+    bottom: 72rpx;
+    color: #fff;
+    font-size: 32rpx;
+    left: 57rpx;
+    position: absolute;
+}
+
+.ctx {
+    flex-wrap: wrap;
+    margin: 105rpx auto;
+    width: 489rpx;
+}
+
+.ctx,.ctx .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ctx .item {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 276rpx;
+    margin-bottom: 42rpx;
+    width: 216rpx;
+}
+
+.ctx .item .medal-icon {
+    height: 216rpx;
+    width: 216rpx;
+}
+
+.ctx .item .text {
+    color: #000;
+    font-size: 26rpx;
+    text-align: center;
+    width: 100%;
+}

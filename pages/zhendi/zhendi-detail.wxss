@@ -1,0 +1,212 @@
+page {
+    background-color: #fff;
+}
+
+.zhendi-detail {
+    position: relative;
+}
+
+.wxParse-strong {
+    font-weight: 800;
+}
+
+.main-pic {
+    height: 471rpx;
+    top: 0;
+    z-index: 0;
+}
+
+.main-card,.main-pic {
+    position: absolute;
+    width: 750rpx;
+}
+
+.main-card {
+    background-color: #fff;
+    border-radius: 71rpx 71rpx 0 0;
+    margin-top: -71rpx;
+    padding-bottom: 200rpx;
+    top: 490rpx;
+    z-index: 10;
+}
+
+.title {
+    align-items: center;
+    border-left: 19rpx solid #4da0ff;
+    font-size: 48rpx;
+    margin-top: 50rpx;
+    padding-left: 24rpx;
+    vertical-align: initial;
+    width: 600rpx;
+}
+
+.daka-status,.title {
+    font-weight: 700;
+    margin-left: 39rpx;
+}
+
+.daka-status {
+    border-radius: 23.5rpx;
+    color: #fff;
+    font-size: 30rpx;
+    height: 47rpx;
+    line-height: 47rpx;
+    margin-top: 30rpx;
+    text-align: center;
+    width: 146rpx;
+}
+
+.daka-status.yes {
+    background-color: #43cf7c;
+}
+
+.daka-status.no {
+    background-color: #ff4545;
+}
+
+.item {
+    margin-top: 31rpx;
+    width: 100%;
+}
+
+.item text {
+    display: none;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.item .sub-title {
+    align-items: center;
+    display: flex;
+    font-size: 32rpx;
+    font-weight: 700;
+    height: 47rpx;
+    line-height: 47rpx;
+}
+
+.item .sub-title .icon {
+    margin-left: 39rpx;
+    margin-right: 12rpx;
+    width: 33rpx;
+}
+
+.item .item-text,.item .wxParse-inline {
+    font-size: 32rpx;
+    line-height: 51rpx;
+    margin: 20rpx auto;
+    text-align: justify;
+    width: 585rpx;
+}
+
+.item .item-text.addr,.item .wxParse-inline.addr {
+    text-align: center;
+}
+
+.item .tail {
+    color: #878787;
+}
+
+.item .br.wxParse-view {
+    height: 40rpx;
+}
+
+.item .wxParse-inline {
+    margin: 0;
+}
+
+.item .item-ctx {
+    border-radius: 39rpx;
+    height: 352rpx;
+    margin: 20rpx auto;
+    overflow: hidden;
+    width: 585rpx;
+}
+
+.item .item-ctx .swiper-item-pic {
+    border-radius: 39rpx;
+    height: 100%;
+    width: 100%;
+}
+
+.item .item-map {
+    border-radius: 10rpx;
+    height: 352rpx;
+    margin: 20rpx auto 0;
+    overflow: hidden;
+    width: 585rpx;
+}
+
+.item .act-item {
+    border-left: 11rpx solid #4da0ff;
+    margin-bottom: 39rpx;
+    margin-left: -34rpx;
+    padding-left: 30rpx;
+}
+
+.item .act-item .act-title {
+    color: #4da0ff;
+    font-size: 32rpx;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+.item .act-item .act-info {
+    color: #000;
+    font-size: 30rpx;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.item .act-item .act-reservation {
+    color: rgba(0,0,0,.5);
+    font-size: 30rpx;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.btn-group {
+    bottom: env(safe-area-inset-bottom);
+    height: 96rpx;
+    justify-content: space-between;
+    left: 50%;
+    position: fixed;
+    text-align: center;
+    transform: translate(-50%,-58rpx);
+    width: 676rpx;
+}
+
+.identity-selector {
+    border-radius: 40rpx 40rpx 0 0;
+    bottom: env(safe-area-inset-bottom);
+    font-size: 30rpx;
+    height: 362rpx;
+    text-align: center;
+}
+
+.identity-selector,.identity-selector .safe-area {
+    background-color: #fff;
+    position: fixed;
+    width: 750rpx;
+    z-index: 210;
+}
+
+.identity-selector .safe-area {
+    height: env(safe-area-inset-bottom);
+}
+
+.identity-selector .wrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 467rpx;
+}
+
+.identity-selector .selector-item-icon {
+    height: 154rpx;
+    margin-bottom: 18rpx;
+    width: 154rpx;
+}

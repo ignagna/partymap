@@ -1,0 +1,10 @@
+<view catchtap="handleConfirm" catchtouchmove="nothing" class="my-alert">
+    <view class="alert-body">
+        <view catchtap="nothing" class="ctx">
+      {{text}}
+    </view>
+        <view catchtap="handleConfirm" class="confirm">
+      确定
+    </view>
+    </view>
+</view>

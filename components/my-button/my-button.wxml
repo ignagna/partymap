@@ -1,0 +1,1 @@
+<button class="daka-btn {{plain?'plain':''}} {{blue?'blue':''}}" disabled="{{disabled}}" style="width:{{width}}">{{text}}</button>

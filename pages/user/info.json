@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "identity-selector": "../../components/identity-selector/identity-selector"
+    },
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "个人中心"
+}

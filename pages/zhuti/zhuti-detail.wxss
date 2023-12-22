@@ -1,0 +1,240 @@
+.dxjy .title,.dxjy .title .logo,.hsyx .title,.hsyx .title .logo {
+    background: linear-gradient(135deg,#ff8373,#ff4a4a);
+}
+
+.dxjy .sub-title::before,.hsyx .sub-title::before {
+    background: #ff5c57;
+}
+
+.whfn .title,.whfn .title .logo {
+    background: linear-gradient(135deg,#9671f5 .26%,#8b65eb);
+}
+
+.whfn .sub-title::before {
+    background: #946ff3;
+}
+
+.xczx .title,.xczx .title .logo {
+    background: linear-gradient(135deg,#30f0a3 .53%,#0dd998);
+}
+
+.xczx .sub-title::before {
+    background: #10db99;
+}
+
+.zlfz .title {
+    width: 665rpx!important;
+}
+
+.zlfz .title,.zlfz .title .logo {
+    background: linear-gradient(135deg,#4d97ff,#37f);
+}
+
+.zlfz .sub-title::before {
+    background: #4b95ff;
+}
+
+.whhm .title,.whhm .title .logo {
+    background: linear-gradient(135deg,#ff8952,#ff7a33);
+}
+
+.whhm .sub-title::before {
+    background: #ff864c;
+}
+
+.zhuti-detail {
+    padding-bottom: 80rpx;
+}
+
+.zhuti-detail .title {
+    border: 10rpx solid #fff;
+    border-radius: 55.5rpx;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 48rpx;
+    line-height: 89rpx;
+    margin: 68rpx auto 48rpx;
+    min-height: 89rpx;
+    padding-left: 100rpx;
+    position: relative;
+    text-align: center;
+    width: 617rpx;
+}
+
+.zhuti-detail .title .logo {
+    border: 10rpx solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+    display: block;
+    height: 143rpx;
+    left: -35rpx;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 143rpx;
+}
+
+.zhuti-detail .title .logo-img {
+    height: 68rpx;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.zhuti-detail .map {
+    height: 909rpx;
+    margin: 0 auto 57rpx;
+    position: relative;
+    width: 662rpx;
+}
+
+.zhuti-detail .map .map-bg {
+    height: 100%;
+    width: 100%;
+}
+
+.zhuti-detail .map .light-area,.zhuti-detail .map .name-card,.zhuti-detail .map .touch-area {
+    height: 909rpx;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 662rpx;
+}
+
+.zhuti-detail .map .light-area .item,.zhuti-detail .map .light-area .name-item,.zhuti-detail .map .name-card .item,.zhuti-detail .map .name-card .name-item,.zhuti-detail .map .touch-area .item,.zhuti-detail .map .touch-area .name-item {
+    position: absolute;
+}
+
+.zhuti-detail .map .light-area .item {
+    background-color: initial;
+    height: 31rpx;
+    position: absolute;
+    width: 31rpx;
+}
+
+.zhuti-detail .info {
+    background: #fff;
+    border-radius: 45rpx;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    line-height: 45rpx;
+    margin: 0 auto;
+    padding: 50rpx;
+    text-align: justify;
+    width: 662rpx;
+}
+
+.zhuti-detail .info .sub-title {
+    align-items: center;
+    display: flex;
+    font-size: 48rpx;
+    height: 51rpx;
+    margin-bottom: 30rpx;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.zhuti-detail .info .sub-title::before {
+    border-radius: 4rpx;
+    content: "";
+    display: inline-block;
+    height: 51rpx;
+    margin-right: 16rpx;
+    width: 13rpx;
+}
+
+.zhuti-detail .tip {
+    font-size: 28rpx;
+    line-height: 150%;
+    margin: 43rpx auto;
+    padding-bottom: 130rpx;
+    text-align: justify;
+    width: 644rpx;
+}
+
+.zhuti-detail .tip .blob {
+    font-weight: 800;
+}
+
+.zhuti-detail .tip .red {
+    color: #ff5c57;
+    font-weight: 400;
+}
+
+.zhuti-detail .post-btn {
+    bottom: 10rpx;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+.mask-tip {
+    background-color: rgba(0,0,0,.7);
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 750rpx;
+    z-index: 3;
+}
+
+.mask-tip .ctx {
+    height: 140rpx;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 750rpx;
+}
+
+.mask-tip .ctx.share-tip {
+    height: 950rpx;
+    text-align: right;
+    top: 10rpx;
+    transform: translateX(-50%);
+}
+
+.mask-tip image {
+    display: block;
+}
+
+.mask-tip .text-tip {
+    height: 140rpx;
+    margin: 0 auto;
+    width: 384rpx;
+}
+
+.mask-tip .line-tip {
+    height: 524rpx;
+    margin-left: 121rpx;
+    width: 130rpx;
+}
+
+.mask-tip .moment-line {
+    display: inline-block;
+    height: 345rpx;
+    margin-bottom: 40rpx;
+    margin-right: 117rpx;
+    width: 194rpx;
+}
+
+.mask-tip .moment-tip {
+    height: 140rpx;
+    margin: 0 auto 340rpx;
+    width: 624rpx;
+}
+
+.mask-tip .moment-btn {
+    height: 69rpx;
+    margin: 0 auto;
+    width: 226rpx;
+}
+
+.name-card .name-item {
+    height: 38rpx;
+}

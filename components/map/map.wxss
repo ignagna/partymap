@@ -1,0 +1,34 @@
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+.map .move-area {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+.map .move-view {
+    position: relative;
+}
+
+.map .move-view,.map .move-view .map-image,.map .move-view .t1 {
+    height: 100%;
+    width: 100%;
+}
+
+.map .move-view .t1 {
+    position: relative;
+}
+
+.map .move-view .toutch-area {
+    left: 24.57240593%;
+    opacity: .5;
+    position: absolute;
+    top: 45.64516129%;
+}
+
+.map .move-view .icon {
+    position: absolute;
+}

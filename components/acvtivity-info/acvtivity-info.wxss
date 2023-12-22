@@ -1,0 +1,83 @@
+.acvtivity-info .mask {
+    background-color: rgba(0,0,0,.5);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1100;
+}
+
+.acvtivity-info .rule-ctx {
+    height: 984rpx;
+    left: 50%;
+    position: fixed;
+    top: 126rpx;
+    transform: translateX(-50%);
+    width: 677rpx;
+    z-index: 1200;
+}
+
+.acvtivity-info .card {
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.acvtivity-info .card .title {
+    font-size: 80rpx;
+    font-weight: 800;
+    margin-bottom: 90rpx;
+    text-align: center;
+}
+
+.acvtivity-info .card .rule {
+    font-size: 24rpx;
+    line-height: 36rpx;
+}
+
+.acvtivity-info .card .rule-img {
+    height: 984rpx;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 677rpx;
+    z-index: -1;
+}
+
+.acvtivity-info .card .text-ctx {
+    height: 400rpx;
+    left: 50%;
+    overflow-y: scroll;
+    position: absolute;
+    text-align: left;
+    top: 320rpx;
+    transform: translateX(-50%);
+    width: 500rpx;
+}
+
+.acvtivity-info .card .text-ctx text {
+    display: none;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.acvtivity-info .card .go-btn {
+    bottom: 125rpx;
+    height: 90rpx;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 253rpx;
+}
+
+.acvtivity-info .card .close {
+    bottom: -50rpx;
+    height: 68rpx;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,100%);
+    width: 68rpx;
+}

@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "game-rule-text": "../../components/game-rule/game-rule-text"
+    },
+    "navigationBarTitleText": "活动规则"
+}

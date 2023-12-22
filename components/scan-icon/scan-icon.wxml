@@ -1,0 +1,3 @@
+<view catchtap="handleClick" class="scan-icon">
+    <image class="scan-icon-img" src="../../assets/images/scan-icon.svg"></image>
+</view>

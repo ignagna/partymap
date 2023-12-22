@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/zhuti/zhuti",
+    "pages/zhendi/zhendi",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/zhuti/zhuti",
+        "iconPath":"assets/images/zhuti/zhuti-1.png",
+        "text": "主题路线打卡"
+      },
+      {
+        "pagePath": "pages/zhendi/zhendi",
+        "iconPath":"assets/images/zhuti/zhuti-1.png",
+        "text": "阵地打卡"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath":"assets/images/zhuti/zhuti-1.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  }
+}

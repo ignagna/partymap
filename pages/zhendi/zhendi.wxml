@@ -1,0 +1,7 @@
+<view class="zhendi">
+    <my-map class="my-map"></my-map>
+    <!-- <image bindtap="showRule" class="rule-btn" src="../../assets/images/rule.png"></image> -->
+    <!-- <game-rule antiphase bind:close="closeRule" wx:if="{{showRule}}"></game-rule> -->
+    <!-- <acvtivity-info></acvtivity-info> -->
+    <!-- <scan-icon></scan-icon> -->
+</view>

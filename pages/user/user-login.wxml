@@ -1,0 +1,42 @@
+<view class="user-login {{type}}">
+    <button bind:chooseavatar="onChooseAvatar" class="avatar-wrapper" openType="chooseAvatar">
+        <image class="avatar" src="{{userInfo.avatar}}"></image>
+        <image class="edit" src="../../assets/images/user-info/info-icon/i-edit.png"></image>
+    </button>
+    <view class="nickname-wrapper" wx:if="{{type=='guest'}}">
+        <view class="label">昵称</view>
+        <input bindinput="handleNicknameInput" class="nickname-input" placeholder="请输入昵称" type="nickname" value="{{userInfo.nickname}}"></input>
+    </view>
+    <view class="dangyuan-info" wx:if="{{type!='guest'}}">
+        <view class="item">
+            <image class="dot" mode="widthFix" src="../../assets/images/user-info/info-icon/i-nickname.png"></image>
+            <view class="label">昵称</view>
+            <input bindinput="handleNicknameInput" class="item-input" maxlength="20" placeholder="请输入昵称" type="nickname" value="{{userInfo.nickname}}"></input>
+        </view>
+        <view class="item">
+            <image class="dot" mode="widthFix" src="../../assets/images/user-info/info-icon/i-name.png"></image>
+            <view class="label">姓名</view>
+            <input bindinput="handleRealnameInput" class="item-input" maxlength="20" placeholder="请输入姓名" type="text" value="{{userInfo.realName}}"></input>
+        </view>
+        <view class="item">
+            <image class="dot" mode="widthFix" src="../../assets/images/user-info/info-icon/i-phone.png"></image>
+            <view class="label">电话</view>
+            <input bindinput="handlePhoneInput" class="item-input" maxlength="11" placeholder="请输入电话" type="number" value="{{userInfo.phone}}"></input>
+        </view>
+        <view bindtap="handleSelectOrg" class="item" wx:if="{{type!='guest'}}">
+            <image class="dot" mode="widthFix" src="../../assets/images/user-info/info-icon/i-org.png"></image>
+            <view class="label">所属党组织</view>
+            <input disabled class="item-input" placeholder="请选择所属党组织" type="text" value="{{dangOrgName}}" wx:if="{{!dangOrgName}}"></input>
+            <view class="org-title" wx:if="{{dangOrgName}}">
+        {{dangOrgName}}
+      </view>
+        </view>
+    </view>
+    <view class="tips" wx:if="{{type=='houjie'}}">
+        <view class="tip-text bold">*温馨提示：</view>
+        <view class="tip-text">1.请填写真实姓名及有效电话，以用于积分排名和兑换奖品。</view>
+        <view class="tip-text">2.审核通过后，需重新进入小程序方可看到排行榜情况。</view>
+    </view>
+    <my-button bindtap="handleDakaBtnClick" class="daka-btn" text="保存" wx:if="{{from=='user'}}"></my-button>
+    <my-button bindtap="handleDakaBtnClick" class="daka-btn" wx:else></my-button>
+</view>

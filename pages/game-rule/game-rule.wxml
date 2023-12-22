@@ -1,0 +1,4 @@
+<view class="game-rule">
+    <image class="main-title" src="../../assets/images/rule-title.png"></image>
+    <game-rule-text class="rule-text"></game-rule-text>
+</view>

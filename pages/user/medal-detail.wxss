@@ -1,0 +1,28 @@
+.medal-detail {
+    width: 750rpx;
+}
+
+.medal-info {
+    margin-top: 301rpx;
+    text-align: center;
+    width: 100%;
+}
+
+.medal-info .text {
+    color: #000;
+    font-size: 50rpx;
+    margin-bottom: 21rpx;
+    margin-top: 37rpx;
+}
+
+.medal-info .time {
+    color: #595959;
+    font-size: 28rpx;
+}
+
+.medal {
+    display: block;
+    height: 300rpx;
+    margin: 0 auto;
+    width: 300rpx;
+}
