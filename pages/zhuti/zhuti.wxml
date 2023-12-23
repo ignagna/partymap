@@ -1,6 +1,6 @@
 <view class="zhuti">
     <view class="zhuti-list">
-        <view catchtap="handleItemClick" class="zhuti-list-item zlfz" data-ztid="{{item.id}}" wx:for="{{zhutiList}}" wx:key="id">
+        <view catchtap="handleItemClick" class="zhuti-list-item {{item.code}}" data-ztid="{{item.id}}" wx:for="{{zhutiList}}" wx:key="id">
             <view class="ctx">
                 <!-- <view catchtap="handleAwardTap" class="award" data-ztid="{{item.id}}">获取奖励</view> -->
                 <view class="left">
@@ -14,7 +14,6 @@
                             <image class="star" src="../../assets/images/zhendi-detail/star/{{item.code}}.png" wx:if="{{item.total-item.progress>0}}" wx:for="{{item.total-item.progress}}" wx:for-item="num" wx:key="*this"></image>
                         </view>
                         <view class="progress-text {{item.total==item.progress?'done':''}}">
-              {{item.progress}}/{{item.total}}
             </view>
                     </view>
                 </view>

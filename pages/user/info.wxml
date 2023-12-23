@@ -20,18 +20,18 @@
         <view class="pannel">
             <view bindtap="handlePannelItemClick" class="item" data-action="profile">
                 <image class="icon" mode="aspectFit" src="../../assets/images/user-info/i-wdzl.png"></image>
-                <view class="text">我的资料</view>
-            </view>
-            <view bindtap="handlePannelItemClick" class="item" data-action="rank" wx:if="{{userInfo.orgStatus=='P'&&userInfo.userType=='D'}}">
-                <image class="icon" mode="aspectFit" src="../../assets/images/user-info/i-rank.png"></image>
-                <view class="text">排行榜</view>
-            </view>
-            
-            <view bindtap="handlePannelItemClick" class="item" data-action="bus">
-                <image class="icon" mode="aspectFit" src="../../assets/images/user-info/i-bus.png"></image>
                 <view class="text">帮助</view>
             </view>
+            <!-- <view bindtap="handlePannelItemClick" class="item" data-action="rank" wx:if="{{userInfo.orgStatus=='P'&&userInfo.userType=='D'}}">
+                <image class="icon" mode="aspectFit" src="../../assets/images/user-info/i-rank.png"></image>
+                <view class="text">排行榜</view>
+            </view> -->
+            
+            <!-- <view bindtap="handlePannelItemClick" class="item" data-action="bus">
+                <image class="icon" mode="aspectFit" src="../../assets/images/user-info/i-bus.png"></image>
+                <view class="text">帮助</view>
+            </view> -->
         </view>
     </view>
-    <identity-selector bind:selected="handleIdentitySelected" from="user" wx:if="{{showIdentitySelector}}"></identity-selector>
+    <!-- <identity-selector bind:selected="handleIdentitySelected" from="user" wx:if="{{showIdentitySelector}}"></identity-selector> -->
 </view>

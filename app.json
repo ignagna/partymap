@@ -21,7 +21,7 @@
   "page":{
   "pages/zhendi/zhendi":{
   "window":{
-  "navigationBarTitleText":"淄博监管分局党建地图"
+    "navigationBarTitleText":"党建地图"
   }
   },
   "pages/zhendi/zhendi-detail":{
@@ -110,7 +110,7 @@
   "window":{
   "backgroundTextStyle":"light",
   "navigationBarBackgroundColor":"#fff",
-  "navigationBarTitleText":"淄博监管分局党建地图",
+  "navigationBarTitleText":"党建地图",
   "navigationBarTextStyle":"black"
   }
   },

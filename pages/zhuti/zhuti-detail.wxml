@@ -6,7 +6,7 @@
     {{info.title}}
   </view>
     <view class="map">
-        <image class="map-bg" src="{{info.mapurl}}"></image>
+        <image class="map-bg" style="border: 2px solid blue;" src="{{info.mapurl}}"></image>
         <view class="light-area">
             <view class="name-card">
                 <image class="name-item" mode="heightFix" src="../../assets/images/zhuti/name/{{item.light?'light':'gray'}}/{{item.alias?item.alias:item.code}}.png" style="left:{{(item.x-8)/902*100}}%;top:{{item.y/1231*100}}%;{{item.h?'height:'+item.h+'rpx;':''}}" wx:for="{{nowNameCard}}" wx:key="code"></image>

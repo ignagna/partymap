@@ -3,6 +3,29 @@ t = require("../../@babel/runtime/helpers/asyncToGenerator"),
 i = require("../../api/area"),
 o = wx.getSystemInfoSync(),
 h = require("../../utils/storage");
+var points = [
+  {
+    code: "hongjunshi",
+    x: 524,
+    y: 838,
+    w: 50,
+    h: 50
+  },
+  {
+    code: "zhiqing",
+    x: 591,
+    y: 906,
+    w: 50,
+    h: 50
+  },
+  {
+    code: "fengshuizhen",
+    x: 627,
+    y: 954,
+    w: 50,
+    h: 50
+  },
+]
 Component({
   properties: {},
   data: {
@@ -22,52 +45,8 @@ Component({
     pixelRatio: 1,
     iconWidth: 75,
     iconHeight: 85.5,
-    touchList: [
-    {
-      code: "zhiqing",
-      x: 600,
-      y: 900,
-      w: 50,
-      h: 50
-    },
-    {
-      code: "hongjunshi",
-      x: 500,
-      y: 800,
-      w: 50,
-      h: 50
-    },
-    {
-      code: "fengshuizhen",
-      x: 700,
-      y: 950,
-      w: 50,
-      h: 50
-    },
-  ],
-    iconList: [
-      {
-        code: "zhiqing",
-        x: 600,
-        y: 900,
-        w: 50,
-        h: 50
-      },
-      {
-        code: "hongjunshi",
-        x: 530,
-        y: 830,
-        w: 50,
-        h: 50
-      },
-      {
-        code: "fengshuizhen",
-        x: 630,
-        y: 930,
-        w: 50,
-        h: 50
-      },
-    ],
+    touchList: points,
+    iconList: points
   },
   lifetimes: {
     ready: function() {},

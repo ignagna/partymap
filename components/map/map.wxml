@@ -1,11 +1,11 @@
 <view class="map">
     <movable-area scaleArea class="move-area">
-        <movable-view scale animation="{{true}}" bindchange="onChange" bindscale="onScale" class="move-view" direction="all" outOfBounds="{{true}}" scaleMax="6" scaleMin="1" scaleValue="1" style="width:1080rpx; height: 4089rpx" x="{{x}}" y="{{y}}">
+        <movable-view scale animation="{{true}}" bindchange="onChange" bindscale="onScale" class="move-view" direction="all" outOfBounds="{{true}}" scaleMax="6" scaleMin="1" scaleValue="1" style="width:1080rpx; height: 2089rpx" x="{{x}}" y="{{y}}">
             <!-- <image binderror="handleImgErr" bindload="handleImgLoad" class="map-image" src="{{mapUrl}}" style="width: 400%;height: 400%;transform-origin: left top;transform:translate3d(0, 0, 0) scale(0.25,0.25);" webp="{{true}}"></image> -->
             <!-- <image binderror="handleImgErr" bindload="handleImgLoad" class="map-image" src="../../assets/images/123.png" style="width: 400%;height: 400%;transform-origin: left top;transform:translate3d(0, 0, 0) scale(0.25,0.25);" webp="{{true}}"></image> -->
-            <image binderror="handleImgErr" bindload="handleImgLoad" class="map-image" src="https://djditu.oss-cn-qingdao.aliyuncs.com/map2.jpg" style="width: 400%;height: 400%;transform-origin: left top;transform:translate3d(0, 0, 0) scale(0.25,0.25);" webp="{{true}}"></image>
+            <image binderror="handleImgErr" bindload="handleImgLoad" class="map-image" src="../../assets/images/map1.png" style="width: 400%;height: 400%;transform-origin: left top;transform:translate3d(0, 0, 0) scale(0.25,0.25);" webp="{{true}}"></image>
             <view catchtap="handleIconClick" class="toutch-area" data-name="{{item.code}}" style="width:{{item.w/1080*100}}%;height:{{item.h/2089*100}}%;top:{{item.y/2089*100}}%;left:{{item.x/1080*100}}%" wx:for="{{touchList}}" wx:key="code"></view>
-            <image catchtap="handleIconClick" class="icon" data-name="{{item.code}}" src="../../assets/images/sign-light.png" style="width:15%;height:15%;top:{{(item.y-28.5)/2089*100}}%;left:{{(item.x-25/2)/1080*100}}%;transform-origin: left top;transform:translate3d(0, 0, 0) scale(0.25,0.25);" wx:for="{{iconList}}" wx:key="code"></image>
+            <image catchtap="handleIconClick" class="icon" data-name="{{item.code}}" src="../../assets/images/sign-light.png" style="width:15%;height:10%;top:{{(item.y-28.5)/2089*100}}%;left:{{(item.x-25/2)/1080*100}}%;transform-origin: left top;transform:translate3d(0, 0, 0) scale(0.25,0.25);" wx:for="{{iconList}}" wx:key="code"></image>
         </movable-view>
     </movable-area>
 </view>
