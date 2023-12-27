@@ -6,22 +6,22 @@ h = require("../../utils/storage");
 var points = [
   {
     code: "hongjunshi",
-    x: 524,
-    y: 838,
+    x: 427,
+    y: 480,
     w: 50,
     h: 50
   },
   {
     code: "zhiqing",
-    x: 591,
-    y: 906,
+    x: 509,
+    y: 576,
     w: 50,
     h: 50
   },
   {
     code: "fengshuizhen",
-    x: 627,
-    y: 954,
+    x: 488,
+    y: 529,
     w: 50,
     h: 50
   },
@@ -34,11 +34,11 @@ Component({
     height: o.windowHeight,
     // mapUrl: "https://mmbiz.qpic.cn/mmbiz_png/IVre43raEsp06HO2ysAG9OXSrvzPR8tOShzSlGWjkzhZVlpaiaR3UpxUkSc4g6Kp98OHG7ia5DSVvJlicDOGLVXMg/0?wx_fmt=png",
     mapUrl: "https://mmbiz.qpic.cn/mmbiz_png/IVre43raEsp06HO2ysAG9OXSrvzPR8tOShzSlGWjkzhZVlpaiaR3UpxUkSc4g6Kp98OHG7ia5DSVvJlicDOGLVXMg/0?wx_fmt=pn",
-    originImgW: 1080,
-    originImgH: 2089,
+    originImgW: 868,
+    originImgH: 1471,
     originImg: {
-      width: 1080,
-      height: 2089
+      width: 868,
+      height: 1471
     },
     x: 300,
     y: 300,
