@@ -83,10 +83,10 @@
 }
 
 .zhuti-detail .map {
-    height: 909rpx;
+    height: 550rpx;
     margin: 0 auto 57rpx;
     position: relative;
-    width: 662rpx;
+    width: 650rpx;
 }
 
 .zhuti-detail .map .map-bg {

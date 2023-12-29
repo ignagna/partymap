@@ -345,7 +345,7 @@ Page({
       this.setData(zhendi_info[0]);
     } else if (t.code == "zhiqing") {
       this.setData(zhendi_info[1]);
-    } else if (t.code == "fengshuizhen") {
+    } else if (t.code == "fengshuizhen") { 
       this.setData(zhendi_info[2]);
     }
     var e = this;
