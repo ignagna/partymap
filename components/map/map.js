@@ -3,27 +3,121 @@ t = require("../../@babel/runtime/helpers/asyncToGenerator"),
 i = require("../../api/area"),
 o = wx.getSystemInfoSync(),
 h = require("../../utils/storage");
+// var points = [
+//   {
+//     code: "hongjunshi",
+//     x: 427,
+//     y: 480,
+//     w: 50,
+//     h: 50
+//   },
+//   {
+//     code: "zhiqing",
+//     x: 509,
+//     y: 576,
+//     w: 50,
+//     h: 50
+//   },
+//   {
+//     code: "fengshuizhen",
+//     x: 488,
+//     y: 529,
+//     w: 50,
+//     h: 50
+//   },
+// ]
+
 var points = [
   {
-    code: "hongjunshi",
-    x: 427,
-    y: 480,
-    w: 50,
-    h: 50
+    "code": "zhiqing",
+    "x": 509,
+    "y": 576,
+    "w": 50,
+    "h": 50
   },
   {
-    code: "zhiqing",
-    x: 509,
-    y: 576,
-    w: 50,
-    h: 50
+    "code": "hongjunshi",
+    "x": 427,
+    "y": 480,
+    "w": 50,
+    "h": 50
   },
   {
-    code: "fengshuizhen",
-    x: 488,
-    y: 529,
-    w: 50,
-    h: 50
+    "code": "fengshuizhen",
+    "x": 488,
+    "y": 529,
+    "w": 50,
+    "h": 50
+  },
+  {
+    "code": "liuyiba",
+    "x": 395,
+    "y": 1149,
+    "w": 50,
+    "h": 50
+  },
+  {
+    "code": "zhuyanfu",
+    "x": 604,
+    "y": 1374,
+    "w": 50,
+    "h": 50
+  },
+  {
+    "code": "qiyunhuanghe",
+    "x": 160,
+    "y": 67,
+    "w": 50,
+    "h": 50
+  },
+  {
+    "code": "wangyuyang",
+    "x": 349,
+    "y": 337,
+    "w": 50,
+    "h": 50
+  },
+  {
+    "code": "qiwenhua",
+    "x": 642,
+    "y": 541,
+    "w": 50,
+    "h": 50
+  },
+  {
+    "code": "jixiaxuegong",
+    "x": 676,
+    "y": 460,
+    "w": 50,
+    "h": 50
+  },
+  {
+    "code": "pusongling",
+    "x": 451,
+    "y": 714,
+    "w": 50,
+    "h": 50
+  },
+  {
+    "code": "zhoucungu",
+    "x": 260,
+    "y": 555,
+    "w": 50,
+    "h": 50
+  },
+  {
+    "code": "jiaoyulu",
+    "x": 382,
+    "y": 942,
+    "w": 50,
+    "h": 50
+  },
+  {
+    "code": "zibomeikuang",
+    "x": 335,
+    "y": 692,
+    "w": 50,
+    "h": 50
   },
 ]
 Component({
